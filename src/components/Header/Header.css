@@ -1,4 +1,5 @@
 .header{
+    
     background-color: black;
     color: white;
     justify-content:center;
@@ -6,7 +7,11 @@
     
 }
 .header-info{
-    padding:80px;
+    /* background-image:url(../../images/header-img.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        opacity: 0.9; */
+    padding:116px;
     width:50%;
 }
 .header-img{
@@ -14,4 +19,18 @@
 }
 .header-img img{
     width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .header-img{
+        display:none;
+    }
+    .header{
+        background-image:url(../../images/header-img.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
+    .header-info{
+       padding:10px;
+       width:70%;
+    }
 }

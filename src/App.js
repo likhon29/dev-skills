@@ -4,6 +4,7 @@ import Blogs from './components/Blogs/Blogs';
 import Courses from './components/Courses/Courses';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
+import Statistics from './components/Statistics/Statistics';
 import Main from './layouts/Main';
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
         },
         {
           path: '/statistics',
-          element: '',
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Statistics></Statistics>,
         },
         {
           path: '/blogs',
