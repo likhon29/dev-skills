@@ -1,0 +1,16 @@
+.rechart-container{
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+    padding:50px;
+    width:50%;
+    color: white;
+    background-color:rgb(93, 137, 181);
+    /* flex-direction: column; */
+}
+@media only screen and (max-width: 600px) {
+    .rechart-container{
+        width:100%;
+        padding:50px;
+    }
+}

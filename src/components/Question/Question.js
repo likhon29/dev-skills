@@ -27,7 +27,8 @@ const Question = ({ question }) => {
   };
   
   return (
-    <div className="container question w-50">
+    <div className="container question w-50 ">
+      
       <div className="d-flex question-info">
         <h4>
           {" "}

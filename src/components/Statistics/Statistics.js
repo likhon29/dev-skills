@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import "./Statistics.css";
 import {
   LineChart,
   Line,
@@ -12,71 +13,46 @@ import {
 } from "recharts";
 
 const Statistics = () => {
-  const data1 = [
-    {
-      name: "Page A",
-      marks: 4000,
-      quiz: 2400,
-      amt: 2400,
-    },
-    {
-      name: "Page B",
-      marks: 3000,
-      quiz: 1398,
-      amt: 2210,
-    },
-    {
-      name: "Page C",
-      marks: 2000,
-      quiz: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Page D",
-      marks: 2780,
-      quiz: 3908,
-      amt: 2000,
-    },
-    {
-      name: "Page E",
-      marks: 1890,
-      quiz: 4800,
-      amt: 2181,
-    },
-    {
-      name: "Page F",
-      marks: 2390,
-      quiz: 3800,
-      amt: 2500,
-    },
-    {
-      name: "Page G",
-      marks: 3490,
-      quiz: 4300,
-      amt: 2100,
-    },
-  ];
-
   const allData = useLoaderData();
-    
-    const { data } = allData;
-    console.log(data);
+
+  const { data } = allData;
+  console.log(data);
   return (
-    <div>
-      <LineChart width={500} height={400} data={data1}>
-        <Line type="monotone" dataKey="marks" stroke="#82ca9d" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip></Tooltip>
-          </LineChart>
+    <div className="">
+      <h2 style={{margin:'0px'}}>Rechart of Topics vs total Questions</h2>
+          <div className="rechart-container">
           
-          <br />
-          <LineChart width={500} height={400} data={data}>
-        <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip></Tooltip>
-      </LineChart>
+        <LineChart width={470} height={400} data={data}>
+          <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip></Tooltip>
+                  </LineChart>
+             
+              
+
+              {/* <ResponsiveContainer width="100%" height="100%">
+        <LineChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="total" stroke="#8884d8" activeDot={{ r: 8 }} />
+          
+        </LineChart>
+      </ResponsiveContainer> */}
+      </div>
     </div>
   );
 };
