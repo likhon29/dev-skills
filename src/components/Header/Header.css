@@ -1,0 +1,17 @@
+.header{
+    background-color: black;
+    color: white;
+    justify-content:center;
+    align-items:center;
+    
+}
+.header-info{
+    padding:80px;
+    width:50%;
+}
+.header-img{
+    width: 50%;
+}
+.header-img img{
+    width: 100%;
+}

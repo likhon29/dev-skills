@@ -1,9 +1,9 @@
 .nav-container{
     display:flex;
-    background-color:slategray;
+    background-color:rgb(78, 58, 207);
     justify-content:space-between;
     align-items:center;
-    /* padding:5px; */
+    padding:5px;
 }
 .title-name{
     color:black;
@@ -18,3 +18,28 @@
     color:white;
     font-size:20px;
 }
+.nav-item a:hover{
+    color:black
+}
+.active{
+    background-color:orangered;
+    padding:8px;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-item{
+        display:flex;
+        flex-direction:column;
+       
+    }
+    .title-name{
+        margin-left:0;
+    }
+    .nav-item a{
+        margin-right:0px;
+    }
+  }

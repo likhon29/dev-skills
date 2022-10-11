@@ -1,0 +1,18 @@
+.course{
+    display:flex;
+    margin:20px;
+    border:1px solid rgb(105, 97, 158);
+    border-radius: 20px;
+    background-color: rgb(152, 140, 235);
+}
+.logo-container{
+    background-color: rgb(78, 58, 207);
+   border-radius:20px;
+}
+.logo-container img{
+    width:250px;
+    padding:20px;
+}
+.course-info{
+   margin:40px auto;
+}
