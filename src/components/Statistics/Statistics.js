@@ -19,7 +19,7 @@ const Statistics = () => {
   console.log(data);
   return (
     <div className="">
-      <h2 style={{margin:'0px'}}>Rechart of Topics vs total Questions</h2>
+      <h2 style={{margin:'0px'}}>LineChart for Topics vs Total Number of Questions</h2>
           <div className="rechart-container">
           
         <LineChart width={470} height={400} data={data}>

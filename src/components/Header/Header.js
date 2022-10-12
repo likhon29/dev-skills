@@ -5,22 +5,20 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className=" header d-flex">
-       <div className="header-img">
-        <img src={MyImage} alt="" />
+      <div className="header-img m-0">
+        <img src={MyImage} width="100%"alt="" />
       </div>
-          <div className="header-info">
-              
-        <h1>Learn without limits</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum
-          eos commodi laborum sunt animi amet. Incidunt aliquam blanditiis
-          voluptatem unde fugiat commodi adipisci voluptatum! Ea consectetur
-          molestiae est sed?
-              </p>
-              <Link to="" className="btn btn-primary">Get Started</Link>
+      <div className="header-info">
+        <h1 style={{color:'orangered'}}> Learn & Works Hard without limits</h1>
+        <p className="">
+          Dev Skill is a platform for IT professionals. You can join us to get
+          latest updates on our courses, events, blog posts etc. Here, more than
+          10 courses for develop your real life experience and skills
+        </p>
+        <Link to="" className="btn btn-primary">
+          Enroll Now
+        </Link>
       </div>
-      
-     
     </div>
   );
 };
