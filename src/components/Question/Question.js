@@ -5,12 +5,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faEye } from "@fortawesome/free-solid-svg-icons";
-const Question = ({ question }) => {
+const Question = ({ question,questions }) => {
   const { options, id, correctAnswer } = question;
   console.log(question);
-  const lastDigit = question.id.slice(question.id.length - 1);
-  const quizNo = parseInt(lastDigit);
-  console.log(quizNo);
+ const indexNo=questions.indexOf(question);
+  // const lastDigit = question.id.slice(question.id.length - 1);
+  // const quizNo = parseInt(lastDigit);
+  // console.log(quizNo);
 
   const handleAnswer = () => {
     toast(correctAnswer);
@@ -32,9 +33,9 @@ const Question = ({ question }) => {
       <div className="d-flex question-info">
         <h4>
           {" "}
-          Quiz {quizNo + 1}: {question.question}
+          Quiz {indexNo + 1}: {question.question}
         </h4>{" "}
-        <FontAwesomeIcon onClick={handleAnswer} icon={faEye}></FontAwesomeIcon>
+        <FontAwesomeIcon onClick={handleAnswer} icon={faEye} style={{ color: 'blue', fontSize:'20px'}}></FontAwesomeIcon>
       </div>
 
       <div className="option-container">

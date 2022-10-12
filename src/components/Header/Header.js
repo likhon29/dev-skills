@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className=" header d-flex">
+       <div className="header-img">
+        <img src={MyImage} alt="" />
+      </div>
           <div className="header-info">
               
         <h1>Learn without limits</h1>
@@ -17,9 +20,7 @@ const Header = () => {
               <Link to="" className="btn btn-primary">Get Started</Link>
       </div>
       
-      <div className="header-img">
-        <img src={MyImage} alt="" />
-      </div>
+     
     </div>
   );
 };

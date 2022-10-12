@@ -1,12 +1,12 @@
 .course{
     display:flex;
     margin:20px;
-    border:1px solid rgb(105, 97, 158);
+    border:1px solid rgb(183, 182, 195);
     border-radius: 20px;
-    background-color: rgb(152, 140, 235);
+    background-color: rgb(126, 163, 199);
 }
 .logo-container{
-    background-color: rgb(78, 58, 207);
+    background-color: rgb(93, 137, 181);
    border-radius:20px;
 }
 .logo-container img{

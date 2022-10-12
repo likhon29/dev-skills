@@ -6,17 +6,19 @@ box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.1);
 padding:10px;
 justify-content:center;
 width:100%;
+border-radius: 20px;
 }
 .question h4{
-    color:blue;
+    color:rgb(93, 137, 181);
 }
 .option-container{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap:0;
-    background-color:slateblue;
+    background-color:rgb(93, 137, 181);
     padding:20px;
     margin:20px;
+    border-radius: 20px;
 }
 .option-container p{
     background-color:white;
