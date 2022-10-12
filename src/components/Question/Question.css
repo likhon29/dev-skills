@@ -28,6 +28,9 @@ border-radius: 20px;
     color:black;
     font-size: 18px;
 }
+.option-container p:hover{
+ background-color: rgb(151, 181, 211);
+}
 .question-info{
     margin:10px;
     padding:10px;
