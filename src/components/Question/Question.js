@@ -7,7 +7,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faEye } from "@fortawesome/free-solid-svg-icons";
 const Question = ({ question,questions }) => {
   const { options, id, correctAnswer } = question;
-  console.log(question);
+  // const ques = questions.question.replace(/(<([^>]+)>)/ig, '');
+  // console.log(ques);
+  
  const indexNo=questions.indexOf(question);
   // const lastDigit = question.id.slice(question.id.length - 1);
   // const quizNo = parseInt(lastDigit);
