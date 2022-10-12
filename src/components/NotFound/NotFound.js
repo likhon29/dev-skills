@@ -6,7 +6,7 @@ const NotFound = () => {
         <div>
             <Link className="mt-2 btn btn-primary" to='/'>Go Back Home</Link>
             <div className="img-container">
-            <img src={NF404} alt="" />
+            <img src={NF404} width="75%" alt="" />
             </div>
             
         </div>
